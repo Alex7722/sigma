@@ -59,12 +59,14 @@
     height: 768px;
     margin: auto;
     border-color: #E5E5E5;
+    border: solid 0.3em;
   }
   #container2 {
     max-width: 1024px;
     height: 768px;
     margin: auto;
     border-color: #E5E5E5;
+    border: solid 0.3em;
   }
 </style>
 </head>
@@ -86,7 +88,8 @@ sigma.parsers.json('data_2000.json', {
         minNodeSize: 0.5,
         maxNodeSize: 15,
         defaultEdgeType: 'curve',
-        labelThreshold: 16
+        labelThreshold: 16,
+        borderSize: 1
     }
 }, function(s) {
     s.startForceAtlas2({barnesHutOptimize: false});
