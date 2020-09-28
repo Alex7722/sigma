@@ -64,6 +64,7 @@
     max-width: 1024px;
     height: 768px;
     margin: auto;
+    border-color: #E5E5E5;
   }
 </style>
 </head>
@@ -82,8 +83,8 @@ sigma.parsers.json('data_2000.json', {
         type: 'canvas'
     },
     settings: {
-        minNodeSize: 1,
-        maxNodeSize: 25,
+        minNodeSize: 0.5,
+        maxNodeSize: 15,
         defaultEdgeType: 'curve',
         labelThreshold: 16
     }
@@ -107,8 +108,8 @@ sigma.parsers.json('data_2010.json', {
         type: 'canvas'
     },
     settings: {
-        minNodeSize: 1,
-        maxNodeSize: 20,
+        minNodeSize: 0.5,
+        maxNodeSize: 15,
         defaultEdgeType: 'curve',
         labelThreshold: 16
     }
